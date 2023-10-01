@@ -22,6 +22,8 @@ const App = () => {
     }, []);
 
     if (isFetchError) {
+        console.error('You must run the backend api in the background. It needs to be accessible at http://localhost:8080');
+
         return <div>Error</div>;
     }
 
