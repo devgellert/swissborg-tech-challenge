@@ -15,10 +15,12 @@ export type Transaction = {
     amount: number;
 };
 
-// Responses
-
-export type EurRatesResponse = {
+export type EurRates = {
     [key in Currency]: number | null;
 };
 
-export type TransactionsResponse = Transaction[];
+// Responses
+
+export type EurRatesResponse = EurRates;
+
+export type TransactionsResponse = { transactions: Transaction[]; }
