@@ -1,7 +1,7 @@
 import React from 'react';
 import Table from "../Table";
 import {getSummaryTableRows} from "../../lib/utils";
-import {EurRatesResponse, Transaction} from "../../types/api-types";
+import {EurRates, Transaction} from "../../types/api-types";
 import style from './style.module.scss';
 
 const HEADER_COLS = [
@@ -16,7 +16,7 @@ const HEADER_COLS = [
 
 type Props = {
     transactions: Transaction[];
-    eurRates: EurRatesResponse;
+    eurRates: EurRates;
 }
 
 const SummaryTable = ({transactions, eurRates}: Props) => {
